@@ -1,0 +1,16 @@
+from openai import OpenAI
+
+client = OpenAI(api_key="")
+
+## create database  
+vector_store = client.vector_stores.create(
+    name="soc-ids-rules"
+)
+
+print("Vector Store ID:", vector_store.id)
+
+
+
+--------------
+The result must be like this :
+Vector Store ID: vs_......................
