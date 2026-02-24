@@ -1,12 +1,12 @@
 from openai import OpenAI
 
-client = OpenAI(api_key="")
+client = OpenAI(api_key="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")
 
 
 VECTOR_STORE_ID = "vs_697dca4c483c8191b3469c2539a40761"  
 
 file = client.files.create(
-    file=open("filename", "rb"),
+    file=open("rules.dataset.json", "rb"),
     purpose="assistants"
 )
 
